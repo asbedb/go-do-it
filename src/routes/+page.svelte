@@ -102,7 +102,7 @@
 		<div class="flex flex-col">
 			<h1 class="flex min-w-0 items-center gap-2 text-lg font-semibold sm:text-xl">
 				<TimerIcon class="size-5 shrink-0" />
-				<span class="truncate">do it now</span>
+				<span class="truncate">go do it</span>
 			</h1>
 			<span class="ml-4 text-xs italic">a todoist task timer</span>
 		</div>
