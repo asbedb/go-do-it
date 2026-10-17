@@ -5,6 +5,7 @@
 	import { onMount } from 'svelte';
 	import { ApiError, getConfig, getTasks, setUserToken } from '#lib/api.js';
 	import { loadUserToken, saveUserToken, timers } from '#lib/app-state.svelte.js';
+	import GithubLink from '#lib/components/GithubLink.svelte';
 	import ModeToggle from '#lib/components/ModeToggle.svelte';
 	import OrphanSessions from '#lib/components/OrphanSessions.svelte';
 	import SampleTimer from '#lib/components/SampleTimer.svelte';
@@ -91,7 +92,7 @@
 </script>
 
 <svelte:head>
-	<title>{timers.runningCount > 0 ? `(${timers.runningCount}) ` : ''}Go do it now</title>
+	<title>{timers.runningCount > 0 ? `(${timers.runningCount}) ` : ''}go do it</title>
 </svelte:head>
 
 <header
@@ -115,6 +116,7 @@
 				<span class="hidden sm:inline">{timers.runningCount === 1 ? 'timer' : 'timers'}</span>
 				running
 			</Badge>
+			<GithubLink />
 			<ModeToggle />
 			{#if phase === 'ready'}
 				<Button
