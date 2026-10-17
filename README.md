@@ -1,4 +1,4 @@
-# Go do it now
+# go do it
 
 A small time tracker on top of Todoist. Start a stopwatch on any active task,
 pause and resume it, and click **Done** to post a session comment on the task
